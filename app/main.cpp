@@ -157,7 +157,7 @@ int main()
                 continue;
             }
             enemy[i].update(time);
-            for (auto bit=bullet.begin(); bit!=bullet.end(); ++bit)
+            for (list <Bullet> :: iterator bit=bullet.begin(); bit!=bullet.end(); ++bit)
             {
                 enemy[i].update((*bit));  // обработка столкнавения врага с пулей
                 p.update((*bit));         // обработка столкнавения игрока с пулей
@@ -182,7 +182,7 @@ int main()
                 }
             }
         }
-        for (auto bit = bullet.begin(); bit != bullet.end(); ++bit)
+        for (list <Bullet> :: iterator bit = bullet.begin(); bit != bullet.end(); ++bit)
         {
             (*bit).update(time);
             window.draw((*bit).sprite);

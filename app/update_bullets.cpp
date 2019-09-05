@@ -8,8 +8,8 @@ using namespace std;
 void update_bullets(list<Bullet>& bullet)
 {
     bool beg = false;
-    auto bit = bullet.begin();
-    auto bit_ = bullet.begin();
+    list <Bullet> :: iterator bit = bullet.begin();
+    list <Bullet> :: iterator bit_ = bullet.begin();
 
     for (int j = 0; j != static_cast<int>(bullet.size()); j++)
     {
