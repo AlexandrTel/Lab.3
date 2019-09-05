@@ -17,14 +17,12 @@ void update_bullets(list<Bullet>& bullet)
 
         for(int i = 0;  i != static_cast<int>(bullet.size()-1); i++)
         {
-            printf("s");
             bit_++;
             if(bit_ == bit) bit_++;
 
             if ((((bit_->rect.left - bit->rect.left) <= 16 && (bit_->rect.left - bit->rect.left)>=0) && (((bit_->rect.top - bit->rect.top) >= -16 && (bit_->rect.top - bit->rect.top) <= 0) || ((bit_->rect.top - bit->rect.top) <= 16 && (bit_->rect.top - bit->rect.top) >= 0))) ||
                 (((bit_->rect.left - bit->rect.left) >= -16 && (bit_->rect.left - bit->rect.left) <= 0) && (((bit_->rect.top - bit->rect.top) >= -16 && (bit_->rect.left - bit->rect.top) <= 0) || ((bit_->rect.top - bit->rect.top) <= 16 && (bit_->rect.top - bit->rect.top) >= 0))))
             {
-                printf("xxxxxxxxxxxxxxx\n");
                 bullet.erase(bit);
                 bullet.erase(bit_);
                 bit = bullet.begin();
@@ -35,6 +33,5 @@ void update_bullets(list<Bullet>& bullet)
         }
         if(beg != true) bit++;
         beg=false;
-        printf("d");
     }
 }
