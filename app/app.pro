@@ -20,9 +20,9 @@ QMAKE_CFLAGS += -Wall -Wextra -Werror
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
-LIBS += -L$$PWD\SFML\lib -lsfml-audio -lsfml-graphics -lsfml-main -lsfml-network -lsfml-system -lsfml-window
+LIBS += -L$$PWD/SFML/lib -lsfml-audio -lsfml-graphics -lsfml-main -lsfml-network -lsfml-system -lsfml-window
 #LIBS += -LC:\Users\Baki\Desktop\testingLab.3\lib_dll -lgcc_s_seh-1 -lstdc++-6 -lwinpthread-1
  #   -lsfml-audio-2 -lsfml-graphics-2 -lsfml-network-2 -lsfml-system-2 -lsfml-window-2
 
-INCLUDEPATH += $$PWD\SFML\include
-DEPENDPATH += $$PWD\SFML\include
+INCLUDEPATH += $$PWD/SFML/include
+DEPENDPATH += $$PWD/SFML/include
