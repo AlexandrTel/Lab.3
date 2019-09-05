@@ -13,7 +13,7 @@ addons:
 script:
   - qmake
   - make
-  - $$PWD/tests
+  - /home/travis/build/AlexandrTel/Lab.3/test
 
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
