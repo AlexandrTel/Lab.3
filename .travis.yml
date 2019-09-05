@@ -1,7 +1,7 @@
 language:
 − cpp
 
-b e f o r e _ i n s t a l l :
+before_install:
 − pip install −− user cpp−coveralls
 
 addons:
