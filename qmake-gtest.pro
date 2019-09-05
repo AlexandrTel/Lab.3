@@ -9,7 +9,7 @@ SUBDIRS = app tests
 
 CONFIG += ordered
 
-LIBS += -L..\SFML\lib -lsfml-audio -lsfml-graphics -lsfml-main -lsfml-network -lsfml-system -lsfml-window
+#LIBS += -L..\SFML\lib -lsfml-audio -lsfml-graphics -lsfml-main -lsfml-network -lsfml-system -lsfml-window
 
-INCLUDEPATH += ..\SFML\include
-DEPENDPATH += ..\SFML\include
+#INCLUDEPATH += ..\SFML\include
+#DEPENDPATH += ..\SFML\include
